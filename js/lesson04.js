@@ -2,9 +2,9 @@ window.addEventListener("DOMContentLoaded", function(){
     
     'use strict';
     
-    let personInput = "88";
+    let personInput = "dasdas sdd";
     function checkType(data){
-        if (isNaN(data)){
+        if (isNaN(data) && data.match(/\d/g) === null){
             let placeholder = data.replace(/ +/g, ' ').trim();
             if (placeholder.length > 30) {
                 return (placeholder.substr(0,29) + "...")
