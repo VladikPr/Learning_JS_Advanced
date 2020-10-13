@@ -2,19 +2,21 @@ window.addEventListener("DOMContentLoaded", function(){
     
     'use strict';
     
-    let personInput = "    Hello World!   ";
+    let personInput = "25";
     function checkType(data){
-        if (typeof data != 'string'){
-            return ("Entered value is not a string!")
-        } else {
+        if (isNaN(data)){
             let placeholder = data.replace(/ +/g, ' ').trim();
             if (placeholder.length > 30) {
                 return (placeholder.substr(0,29) + "...")
             }else{
                 return placeholder
             }
+        } else {
+            return ("Entered value is not a string!")
         }
     }
 
     console.log(checkType(personInput));
+
+   
 })
