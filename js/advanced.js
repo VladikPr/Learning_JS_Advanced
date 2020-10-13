@@ -45,18 +45,18 @@ window.addEventListener('DOMContentLoaded',function() {
     };
 
     //c
+    lang = 'ru';
         weekDays = {
             'ru':['Понедельник', 'Вторник', 'Среда', 'Четверг', 'Пятница', 'Суббота', 'Воскресенье'],
             'en':['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday']
         };
 
-        console.log(weekDays.ru);
-        console.log(weekDays.en);
+        console.log(weekDays[lang])
 
     //2
     let namePerson = prompt("ВВедите свое имя", "");
     
-    namePerson = 'Артем' ? console.log("директор") : namePerson = 'Максим'? console.log("преподователь") : console.log("студент"); 
+    namePerson = 'Артем' ? console.log("директор") : namePerson = 'Максим' ? console.log("преподователь") : console.log("студент"); 
 
         
 
