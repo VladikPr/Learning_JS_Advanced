@@ -3,17 +3,27 @@ document.addEventListener("DOMContentLoaded", function(){
 
     let currentDate = new Date(),
         currentDay = currentDate.getDay(),
-        week = ["Понедельник", "Вторник", "Среда", "Четверг", "Пятница", "Суббота", "Воскресение"];
+        week = ["Понедельник", "Вторник", "Среда", "Четверг", "Пятница", "Суббота", "Воскресение"],
+        div;
 
     week.forEach(function(item, i) {
 
         if ((i+1) == currentDay) {
-            console.log(item.bold()); 
+            div = document.createElement('div');
+            document.body.appendChild(div);
+            div.textContent = item; 
+            div.style.fontWeight = "bold";
         }else if(item === "Суббота" || item === "Воскресение"){
-            console.log(item.italics());
+            div = document.createElement('div');
+            document.body.appendChild(div);
+            div.textContent = item; 
+            div.style.fontStyle = "italic";
         }else{
-            console.log(item);
+            let div = document.createElement('div');
+            document.body.appendChild(div)
+            div.textContent = item; 
         }
+
     });
 
    
