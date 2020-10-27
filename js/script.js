@@ -132,13 +132,12 @@ function createNewAccount(){
 
 registrationBtn.addEventListener('click', function(event){
     event.preventDefault();
-    if(registrationLogin.value.trim() !== "" && registrationPsw.value.trim() !=="" && registrationName.trim() !== ""){
+    if(registrationLogin.value.trim() !== "" && registrationPsw.value.trim() !=="" && registrationName.value.trim() !== ""){
         warningMessage.classList.add('deactivate');
         createNewAccount();
     } else{
         warningMessage.classList.remove('deactivate');
     }
-    btn.blur();
     
     registrationLogin.value = "";
     registrationPsw.value = "";
