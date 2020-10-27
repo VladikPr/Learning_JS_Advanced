@@ -1,0 +1,27 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.wrapper{
+    height: 100vh;
+    width: 100%;
+    background-color: #008d3b;
+    padding-top: 200px;
+}
+
+#color{
+    color: white;
+    text-align: center;
+}
+
+#change{
+    display: block;
+    margin: 0 auto;
+    margin-top: 20px;
+    width: 100px;
+    height: 40px;
+    color: #008d3b;
+    font-weight: bold;
+}
