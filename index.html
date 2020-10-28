@@ -15,8 +15,8 @@
             <img src="img/logo.svg" alt="logo">
         </div>
         <h1 class="login__title">Welcome</h1>
-        <input class="login-input" type="text" placeholder="Login">
-        <input class="psw-login" type="text" placeholder="Password">
+        <input class="login-input" type="text" placeholder="Login" maxlength ="20">
+        <input class="psw-login" type="password" placeholder="Password">
         <button  class="login__btn">LOGIN</button>
         <p class="wrong-input deactivate">Invalid login or password</p>
         <div class="login__new-account">
@@ -30,8 +30,8 @@
         </div>
         <h1 class="registration__title">Registration</h1>
         <input class="registration-name" type="text" placeholder="Firstname Lastname" required>
-        <input class="registration-login"type="text" placeholder="Login" required>
-        <input class="registration-psw"type="text" placeholder="Password" required>
+        <input class="registration-login"type="text" placeholder="Login" required maxlength ="15">
+        <input class="registration-psw" type="password" placeholder="Password" maxlength ="20" required>
         <button class="registration__btn">Create</button>
         <p class = "warning-message deactivate">No empty fields are allowed</p>
         <div class="registration__new-account">

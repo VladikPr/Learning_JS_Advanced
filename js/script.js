@@ -64,7 +64,7 @@ function logInAccount(){
     let user = getData.find(item => item.login === loginInput.value);
     let userIndex = getData.findIndex(index => index.login === loginInput.value);
 
-    if (user !== undefined){
+    if (user !== undefined && user.password == pswLogin.value){
         loginForm.classList.add('deactivate');
         loginInput.value = "";
         pswLogin.value = "";
