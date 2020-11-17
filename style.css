@@ -1,0 +1,40 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#converter{
+    padding: 20px 0 0 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    min-height: 250px;
+    width: 600px;
+    background-color: #E9D985;
+}
+
+.valuta_class,
+.home_currency {
+    margin-top: 30px;
+    display: flex;
+}
+
+.btn{
+    margin-top: 10px;
+}
+
+label{
+    margin-left: 5px;
+}
+
+#rub,
+#abroadCurrency{
+    margin-left: 20px;
+    
+}
+
+input{
+    border: 1px solid black;
+}
